@@ -16,7 +16,6 @@ class TicketScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = AppLayout.getSize(context);
     return Scaffold(
       backgroundColor: Styles.bgColor,
       body: Stack(children: [
@@ -147,8 +146,12 @@ class TicketScreen extends StatelessWidget {
                     bottomLeft: Radius.circular(AppLayout.getHeight(21))),
                 color: Colors.white,
               ),
-              margin: EdgeInsets.only(left: AppLayout.getHeight(15), right: AppLayout.getHeight(15)),
-              padding: EdgeInsets.only(top: AppLayout.getHeight(15), bottom: AppLayout.getHeight(15)),
+              margin: EdgeInsets.only(
+                  left: AppLayout.getHeight(15),
+                  right: AppLayout.getHeight(15)),
+              padding: EdgeInsets.only(
+                  top: AppLayout.getHeight(20),
+                  bottom: AppLayout.getHeight(20)),
               child: Container(
                 padding:
                     EdgeInsets.symmetric(horizontal: AppLayout.getHeight(15)),
@@ -160,13 +163,50 @@ class TicketScreen extends StatelessWidget {
                     drawText: false,
                     color: Styles.textColor,
                     width: double.infinity,
-                    height: 70,
+                    height: AppLayout.getHeight(70),
                   ),
                 ),
               ),
             ),
+            Gap(AppLayout.getHeight(20)),
+            Container(
+              padding: EdgeInsets.only(left: AppLayout.getHeight(15)),
+              child: TicketView(
+                ticket: ticketList[0],
+              ),
+            )
           ],
         ),
+        Positioned(
+          left: AppLayout.getHeight(24),
+          top: AppLayout.getHeight(295),
+          child: Container(
+            padding: EdgeInsets.all(3),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: Styles.textColor, width: 2)
+            ),
+            child: CircleAvatar(
+              maxRadius: 4,
+              backgroundColor: Styles.textColor,
+            ),
+          ),
+        ),
+        Positioned(
+          right: AppLayout.getHeight(24),
+          top: AppLayout.getHeight(295),
+          child: Container(
+            padding: EdgeInsets.all(3),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Styles.textColor, width: 2)
+            ),
+            child: CircleAvatar(
+              maxRadius: 4,
+              backgroundColor: Styles.textColor,
+            ),
+          ),
+        )
       ]),
     );
   }

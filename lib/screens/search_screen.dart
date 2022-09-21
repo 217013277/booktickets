@@ -84,7 +84,7 @@ class SearchScreen extends StatelessWidget {
                     ),
                     Gap(AppLayout.getHeight(12)),
                     Text(
-                      "20% discount on the early booking of this flight. Don't miss out this chance",
+                      "20% discount on the early booking of this flight. Don't miss the chance.",
                       style: Styles.headLineStyle2,
                     )
                   ],
