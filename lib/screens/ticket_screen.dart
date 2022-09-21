@@ -4,7 +4,6 @@ import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_style.dart';
 import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/ticket_tabs.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -115,7 +114,7 @@ class TicketScreen extends StatelessWidget {
                               )
                             ],
                           ),
-                          Gap(5),
+                          Gap(AppLayout.getHeight(5)),
                           Text(
                             "payment method",
                             style: Styles.headLineStyle4,
@@ -181,7 +180,7 @@ class TicketScreen extends StatelessWidget {
           left: AppLayout.getHeight(24),
           top: AppLayout.getHeight(295),
           child: Container(
-            padding: EdgeInsets.all(3),
+            padding: EdgeInsets.all(AppLayout.getHeight(3)),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(color: Styles.textColor, width: 2)
@@ -196,7 +195,7 @@ class TicketScreen extends StatelessWidget {
           right: AppLayout.getHeight(24),
           top: AppLayout.getHeight(295),
           child: Container(
-            padding: EdgeInsets.all(3),
+            padding: EdgeInsets.all(AppLayout.getHeight(3)),
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(color: Styles.textColor, width: 2)

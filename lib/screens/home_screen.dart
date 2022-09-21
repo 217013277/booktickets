@@ -3,7 +3,6 @@ import 'package:booktickets/screens/ticket_view.dart';
 import 'package:booktickets/utils/app_info_list.dart';
 import 'package:booktickets/widgets/double_text_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

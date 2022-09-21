@@ -2,7 +2,6 @@ import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/layout_builder_widget.dart';
 import 'package:booktickets/widgets/thick_container.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_style.dart';
@@ -16,7 +16,9 @@ class AppDoubleTextWidget extends StatelessWidget {
         Text(bigText, style: Styles.headLineStyle2,),
         InkWell(
             onTap: (){
-              print("You are tapped");
+              if (kDebugMode) {
+                print("You are tapped");
+              }
             },
             child: Text(smallText, style: Styles.textStyle.copyWith(color: Styles.primaryColor))
         )

@@ -1,8 +1,8 @@
 import 'package:booktickets/screens/home_screen.dart';
+import 'package:booktickets/screens/profile_screen.dart';
 import 'package:booktickets/screens/search_screen.dart';
 import 'package:booktickets/screens/ticket_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -18,7 +18,7 @@ class _BottomBarState extends State<BottomBar> {
     const HomeScreen(),
     const SearchScreen(),
     const TicketScreen(),
-    const Text("Profile")
+    const ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {

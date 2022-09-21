@@ -1,6 +1,6 @@
 import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_style.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -10,7 +10,9 @@ class HotelScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Hotel price is ${hotel["price"]}");
+    if (kDebugMode) {
+      print("Hotel price is ${hotel["price"]}");
+    }
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width*0.6,
