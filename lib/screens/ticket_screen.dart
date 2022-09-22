@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../widgets/layout_builder_widget.dart';
+// ignore: depend_on_referenced_packages
 import 'package:barcode_widget/barcode_widget.dart';
 
 class TicketScreen extends StatelessWidget {
